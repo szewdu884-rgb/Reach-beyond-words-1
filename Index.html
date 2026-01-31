@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Reach Beyond Words Charity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Loader -->
+<div id="loader" aria-label="Loading">
+  <div class="spinner"></div>
+  <span>Reach Beyond Words</span>
+</div>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+    Reach<span>Beyond</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#impact">Impact</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- Dark Mode Toggle -->
+  <button id="themeToggle" aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+</header>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Giving Hope a Voice<br><span>Beyond Words</span></h1>
+    <p>
+      A humanitarian organization advancing dignity, education,
+      and opportunity for underserved communities worldwide.
+    </p>
+    <button class="primary-btn">
+      <i class="fa-solid fa-arrow-right"></i> Join the Mission
+    </button>
+  </div>
+</section>
+<!-- About -->
+<section id="about" class="section reveal">
+  <div>
+    <h2>Who We Are</h2>
+    <p>
+      Reach Beyond Words Charity exists to address inequality
+      through sustainable humanitarian solutions rooted in compassion,
+      accountability, and impact-driven action.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb" alt="Helping community">
+</section>
+<!-- Programs -->
+<section id="programs" class="section dark reveal">
+  <h2>Our Core Programs</h2>
+  <div class="program-grid">
+    <article class="program-card">
+      <i class="fa-solid fa-book-open"></i>
+      <h3>Education Access</h3>
+      <p>Removing barriers to quality education for vulnerable youth.</p>
+    </article>
+    <article class="program-card">
+      <i class="fa-solid fa-people-group"></i>
+      <h3>Community Support</h3>
+      <p>Empowering families through care, resources, and advocacy.</p>
+    </article>
+    <article class="program-card">
+      <i class="fa-solid fa-bullhorn"></i>
+      <h3>Advocacy & Voice</h3>
+      <p>Championing the rights of those whose voices are often unheard.</p>
+    </article>
+  </div>
+</section>
+<!-- Impact -->
+<section id="impact" class="impact reveal">
+  <h2>Measured Impact</h2>
+  <div class="impact-stats">
+    <div>
+      <i class="fa-solid fa-heart"></i>
+      <span data-count="1200">0</span>
+      <p>Lives Impacted</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-globe"></i>
+      <span data-count="85">0</span>
+      <p>Communities Served</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-calendar"></i>
+      <span data-count="10">0</span>
+      <p>Years of Service</p>
+    </div>
+  </div>
+</section>
+<!-- Contact -->
+<section id="contact" class="contact reveal">
+  <h2>Get in Touch</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">
+      <i class="fa-solid fa-paper-plane"></i> Send Message
+    </button>
+  </form>
+</section>
+<footer>
+  <p>© 2026 Reach Beyond Words Charity</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
