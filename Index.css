@@ -1,0 +1,73 @@
+:root {
+  --bg: #f9fafb;
+  --text: #0f172a;
+  --primary: #2563eb;
+  --card: #ffffff;
+}
+[data-theme="dark"] {
+  --bg: #020617;
+  --text: #e5e7eb;
+  --card: #0f172a;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background .4s, color .4s;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.85);
+}
+[data-theme="dark"] .navbar {
+  background: rgba(2,6,23,0.85);
+}
+.logo span {
+  color: var(--primary);
+}
+/* Buttons */
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s;
+}
+.primary-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(37,99,235,.4);
+}
+/* Program Cards */
+.program-card {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 20px;
+  transition: transform .4s, box-shadow .4s;
+}
+.program-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(0,0,0,.15);
+}
+/* Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: 1s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
